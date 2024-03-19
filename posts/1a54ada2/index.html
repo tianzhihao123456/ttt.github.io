@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html lang=zh>
+<html>
 <head>
-  <meta charset="utf-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="format-detection" content="telephone=no,email=no,adress=no">
-  <!-- Color theme for statusbar -->
-  <meta name="theme-color" content="#000000" />
-  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
-  <meta http-equiv="window-target" content="_top" />
-  
-  
-  <title>博客源码分享 | Hexo</title>
-  <meta name="description" content="写在前面 博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照icarus主题配置和next主题配置。因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。膜拜和感谢所有模块的原作者,orz👻,辛苦了。">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta charset="utf-8">
+    
+    
+    
+    <title>博客源码分享 | 田 | 尚未执佩剑，转眼即江湖</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    
+    <meta name="theme-color" content="#77AAFF">
+    
+    
+    <meta name="keywords" content="工具教程">
+    
+    
+
+    
+
+    <!-- Baidu Push -->
+<script>
+	(function(){
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		}
+		else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+
+	var _hmt = _hmt || [];
+</script>
+
+
+
+    
+    <meta name="description" content="写在前面 博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照icarus主题配置和next主题配置。因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。膜拜和感谢所有模块的原作者,orz👻,辛苦了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客源码分享">
 <meta property="og:url" content="https://ttt.github.io/posts/1a54ada2/index.html">
@@ -29,26 +50,9 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218084713.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200119181201.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218084943.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191128222602.jpg">
-<meta property="og:image" content="http://wx4.sinaimg.cn/mw1024/d79c9b94ly1g0pmoa18rkj23wm2lrb2e.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/mw1024/d79c9b94ly1g1pb1uthr5j21f02iox6t.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw1024/63112839gy1g423ovlwzaj234022ou0y.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw1024/0068cFqEgy1g5v23wwjwdj30sg0ld0vo.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw1024/005RAHfgly1g2jhakgz41j31sc2dsx6u.jpg">
 <meta property="og:image" content="http://wx4.sinaimg.cn/large/70396e5agy1fml9habgdcg20p00hd7wz.gif">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141906.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141926.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145956.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191107231051.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191014183620.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221347.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218085241.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190926210437.png">
@@ -66,374 +70,185 @@
 <meta property="article:tag" content="categories-github">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200119181607.png">
-  <!-- Canonical links -->
-  <link rel="canonical" href="https://ttt.github.io/posts/1a54ada2/index.html">
-  
-    <link rel="alternate" href="/atom.xml" title="田" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    
+        <link rel="alternate" type="application/atom+xml" title="田" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link id="style" rel="stylesheet" href="/css/style.css?v=3.0">
+    <script>window.lazyScripts=[]</script>
 
-  
-  
-  
-  
-<meta name="generator" content="Hexo 4.2.0"></head>
+    <!-- custom head -->
+    
+            
+<meta name="generator" content="Hexo 4.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
 
-<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
-  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-  <div class="slimContent">
-    <div class="navbar-header">
-      
-      
-      <div class="profile-block text-center">
-        <a id="avatar" href="https://github.com/cofess" target="_blank">
-          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+<body>
+    <div id="loading" class="active"></div>
+    <aside id="menu"  class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" >
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg" alt="avatar">
         </a>
-        <h2 id="name" class="hidden-xs hidden-sm">昵称</h2>
-        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
-        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shenzhen, China</small>
+        <hgroup class="introduce">
+          <h5 class="nickname" id="name">田</h5>
+          
+            <div id="yiyanmotto" class="motto">&nbsp;</div>
+          
+        </hgroup>
       </div>
-      
-      <div class="search" id="search-form-wrap">
-
-    <form class="search-form sidebar-form">
-        <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="搜索" />
-            <span class="input-group-btn">
-                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
-            </span>
-        </div>
-    </form>
-    <div class="ins-search">
-  <div class="ins-search-mask"></div>
-  <div class="ins-search-container">
-    <div class="ins-input-wrapper">
-      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
-      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
-    <div class="ins-section-wrapper">
-      <div class="ins-section-container"></div>
-    </div>
-  </div>
-</div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+              <li class="waves-block waves-effect">
+                  <a href="/"  >
+                    <i class="icon icon-lg icon-home"></i>
+                    <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="/archives"  >
+                    <i class="icon icon-lg icon-archives"></i>
+                    <span>归 档</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="/categories"  >
+                    <i class="icon icon-lg icon-th-list"></i>
+                    <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="/tags"  >
+                    <i class="icon icon-lg icon-tags"></i>
+                    <span>标 签</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+              <li class="waves-block waves-effect">
+                  <a href="/about"  >
+                    <i class="icon icon-lg icon-smile-o"></i>
+                    <span>关 于</span><i class="icon icon-lg icon-caret-left"></i>
+                  </a>
+              </li>
+            
+      <div class="nav2">
+          
+              <a class="nav2item" data-title="Email" href="mailto:1755811882@qq.com" target="_parent"title="Email" >
+                <i class="icon icon-lg icon-envelope-o envelope-o"></i>
+              </a>
+          
+              <a class="nav2item" data-title="Github" href="https://github.com/tomotoes" target="_blank"title="Github" >
+                <i class="icon icon-lg icon-github github"></i>
+              </a>
+          
+              <a class="nav2item" data-title="微博" href="https://weibo.com/u/6179399347" target="_blank"title="微博" >
+                <i class="icon icon-lg icon-weibo weibo"></i>
+              </a>
+          
 
-
-</div>
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
-      <ul class="nav navbar-nav main-nav ">
-        
-        
-        <li class="menu-item menu-item-home">
-          <a href="/.">
-            
-            <i class="icon icon-home-fill"></i>
-            
-            <span class="menu-title">首页</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives">
-            
-            <i class="icon icon-archives-fill"></i>
-            
-            <span class="menu-title">归档</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories">
-            
-            <i class="icon icon-folder"></i>
-            
-            <span class="menu-title">分类</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags">
-            
-            <i class="icon icon-tags"></i>
-            
-            <span class="menu-title">标签</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-repository">
-          <a href="/repository">
-            
-            <i class="icon icon-project"></i>
-            
-            <span class="menu-title">项目</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-books">
-          <a href="/books">
-            
-            <i class="icon icon-book-fill"></i>
-            
-            <span class="menu-title">书单</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-links">
-          <a href="/links">
-            
-            <i class="icon icon-friendship"></i>
-            
-            <span class="menu-title">友链</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about">
-            
-            <i class="icon icon-cup-fill"></i>
-            
-            <span class="menu-title">关于</span>
-          </a>
-        </li>
+            </div>
         
       </ul>
-      
-	
-    <ul class="social-links">
-    	
-        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
-        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
-        
-        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
-        
-        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
-        
-    </ul>
-
-    </nav>
+    </div>
   </div>
+ 
+</aside>
+
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">博客源码分享</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        <a href="../../atom.xml" target="_blank" class="header-icon waves-effect waves-circle waves-light" id="Rss">
+            <i class="icon icon-lg icon-rss"></i>
+        </a>
+    </div>
+</header>
+<header class="content-header post-header">
+    
+    
+    <div class="container fade-scale">
+        <div id="myheader">
+            <h1 class="title">
+                
+            </h1>
+            <h5 class="subtitle">
+                
+                
+            </h5>
+        </div>
+    </div>
+
 </header>
 
-  
-    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
+
+<div class="container body-wrap">
     
-      <div class="widget">
-    <h3 class="widget-title">公告</h3>
-    <div class="widget-body">
-        <div id="board">
-            <div class="content">
-                <p>欢迎交流与分享经验!</p>
-            </div>
-        </div>
-    </div>
-</div>
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#写在前面"><span class="post-toc-number">1.</span> <span class="post-toc-text">写在前面</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、icarus主题之上主要改动"><span class="post-toc-number">2.</span> <span class="post-toc-text">一、icarus主题之上主要改动</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、部分配置说明："><span class="post-toc-number">3.</span> <span class="post-toc-text">二、部分配置说明：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#本机环境："><span class="post-toc-number">3.1.</span> <span class="post-toc-text">本机环境：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#开始部分配置："><span class="post-toc-number">3.2.</span> <span class="post-toc-text">开始部分配置：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-热门推荐，最新评论："><span class="post-toc-number">3.3.</span> <span class="post-toc-text">1.热门推荐，最新评论：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-友链数据文件："><span class="post-toc-number">3.4.</span> <span class="post-toc-text">2.友链数据文件：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-影音数据文件："><span class="post-toc-number">3.5.</span> <span class="post-toc-text">3.影音数据文件：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-关于页面时间轴记录数据文件："><span class="post-toc-number">3.6.</span> <span class="post-toc-text">4.关于页面时间轴记录数据文件：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5-看板娘配置"><span class="post-toc-number">3.7.</span> <span class="post-toc-text">5.看板娘配置</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#6-置顶设置："><span class="post-toc-number">3.8.</span> <span class="post-toc-text">6.置顶设置：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7-配置文章中推荐文章模块"><span class="post-toc-number">3.9.</span> <span class="post-toc-text">7.配置文章中推荐文章模块</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#8-文章中某个代码块折叠的方法"><span class="post-toc-number">3.10.</span> <span class="post-toc-text">8.文章中某个代码块折叠的方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#9-加入加密文章"><span class="post-toc-number">3.11.</span> <span class="post-toc-text">9.加入加密文章</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#10-碎碎念的使用"><span class="post-toc-number">3.12.</span> <span class="post-toc-text">10.碎碎念的使用</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#11-本博客样式（透明无界）"><span class="post-toc-number">3.13.</span> <span class="post-toc-text">11.本博客样式（透明无界）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#精简部分widget数据"><span class="post-toc-number">3.14.</span> <span class="post-toc-text">精简部分widget数据</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#gitalk评论增加评论开关，评论列表中标记博主"><span class="post-toc-number">3.15.</span> <span class="post-toc-text">gitalk评论增加评论开关，评论列表中标记博主</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#以上配置好后"><span class="post-toc-number">3.16.</span> <span class="post-toc-text">以上配置好后</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#写在后面"><span class="post-toc-number">4.</span> <span class="post-toc-text">写在后面</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图"><span class="post-toc-number">5.</span> <span class="post-toc-text">文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#效果如下（多图左右拉查看）"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">效果如下（多图左右拉查看）</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#博客快照："><span class="post-toc-number">6.</span> <span class="post-toc-text">博客快照：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#提供hexo博客目录下依赖包-package-json"><span class="post-toc-number">7.</span> <span class="post-toc-text">提供hexo博客目录下依赖包 package.json</span></a></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-theme/博客源码分享"
+  class="post-article article-type-post fade" itemprop="blogPost">
 
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/private/">private</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/">工具教程</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E5%B7%A5%E5%85%B7/">主题工具</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2%E7%BB%9F%E8%AE%A1%E6%8F%92%E4%BB%B6/">博客统计插件</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B3%95%E5%BE%8B/">法律</a><span class="category-list-count">7</span></li></ul>
-    </div>
-  </div>
+    <div class="post-card">
+        <h1 class="post-card-title">博客源码分享</h1>
+        <div class="post-meta">
+            <i class="icon icon-lg icon-calendar-o"></i>
+            发表于
+            <time class="post-time" title="2019-09-19 22:10:43" datetime="2019-09-19T14:10:43.000Z"  itemprop="datePublished">2019-09-19</time>
 
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E4%B8%BB%E9%A2%98/" rel="tag">hexo主题</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/icarus%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" rel="tag">icarus主题配置</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/" rel="tag">加密文章</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2%E7%BB%9F%E8%AE%A1%E6%8F%92%E4%BB%B6/" rel="tag">博客统计插件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/" rel="tag">工具教程</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B3%95%E5%BE%8B/" rel="tag">法律</a><span class="tag-list-count">7</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget-body tagcloud">
-      <a href="/tags/hexo%E4%B8%BB%E9%A2%98/" style="font-size: 13.33px;">hexo主题</a> <a href="/tags/icarus%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" style="font-size: 13.33px;">icarus主题配置</a> <a href="/tags/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/" style="font-size: 13px;">加密文章</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E7%BB%9F%E8%AE%A1%E6%8F%92%E4%BB%B6/" style="font-size: 13px;">博客统计插件</a> <a href="/tags/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/" style="font-size: 13.67px;">工具教程</a> <a href="/tags/%E6%B3%95%E5%BE%8B/" style="font-size: 14px;">法律</a>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget-body">
-      <ul class="recent-post-list list-unstyled no-thumbnail">
-        
-          <li>
+            <br id="mybreak"/>
             
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/private/">private</a>
-              </p>
-              <p class="item-title">
-                <a href="/posts/7e709353/" class="title">加密文章测试</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2020-01-21T02:14:11.000Z" itemprop="datePublished">2020-01-21</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/">工具教程</a><i class="icon icon-angle-right"></i><a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2%E7%BB%9F%E8%AE%A1%E6%8F%92%E4%BB%B6/">博客统计插件</a>
-              </p>
-              <p class="item-title">
-                <a href="/posts/89986481/" class="title">不蒜子统计常见问题</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-12-21T00:46:08.000Z" itemprop="datePublished">2019-12-21</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/">工具教程</a><i class="icon icon-angle-right"></i><a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E5%B7%A5%E5%85%B7/">主题工具</a>
-              </p>
-              <p class="item-title">
-                <a href="/posts/e7fe3cc/" class="title">github Issue 作为博客微型数据库的应用</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-11-28T14:02:05.000Z" itemprop="datePublished">2019-11-28</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/%E6%B3%95%E5%BE%8B/">法律</a>
-              </p>
-              <p class="item-title">
-                <a href="/posts/79e097c3/" class="title">中华人民共和国国旗法</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-10-10T12:06:34.000Z" itemprop="datePublished">2019-10-10</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/%E6%B3%95%E5%BE%8B/">法律</a>
-              </p>
-              <p class="item-title">
-                <a href="/posts/bdeb1d7c/" class="title">中华人民共和国宪法</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-10-10T10:34:50.000Z" itemprop="datePublished">2019-10-10</time>
-              </p>
-            </div>
-          </li>
-          
-      </ul>
-    </div>
-  </div>
-  
+	<i class="icon icon-lg icon-folder-o"></i>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/">工具教程</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E5%B7%A5%E5%85%B7/">主题工具</a></li></ul></li></ul>
 
-    
-  </div>
-</aside>
 
-  
-  
-  <aside class="sidebar sidebar-toc collapse   in  " id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    <nav id="toc" class="article-toc">
-      <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一、icarus主题之上主要改动"><span class="toc-number">2.</span> <span class="toc-text">一、icarus主题之上主要改动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、部分配置说明："><span class="toc-number">3.</span> <span class="toc-text">二、部分配置说明：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#本机环境："><span class="toc-number">3.1.</span> <span class="toc-text">本机环境：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#开始部分配置："><span class="toc-number">3.2.</span> <span class="toc-text">开始部分配置：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-热门推荐，最新评论："><span class="toc-number">3.3.</span> <span class="toc-text">1.热门推荐，最新评论：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-友链数据文件："><span class="toc-number">3.4.</span> <span class="toc-text">2.友链数据文件：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-影音数据文件："><span class="toc-number">3.5.</span> <span class="toc-text">3.影音数据文件：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-关于页面时间轴记录数据文件："><span class="toc-number">3.6.</span> <span class="toc-text">4.关于页面时间轴记录数据文件：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-看板娘配置"><span class="toc-number">3.7.</span> <span class="toc-text">5.看板娘配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-置顶设置："><span class="toc-number">3.8.</span> <span class="toc-text">6.置顶设置：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-配置文章中推荐文章模块"><span class="toc-number">3.9.</span> <span class="toc-text">7.配置文章中推荐文章模块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-文章中某个代码块折叠的方法"><span class="toc-number">3.10.</span> <span class="toc-text">8.文章中某个代码块折叠的方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-加入加密文章"><span class="toc-number">3.11.</span> <span class="toc-text">9.加入加密文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-碎碎念的使用"><span class="toc-number">3.12.</span> <span class="toc-text">10.碎碎念的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11-本博客样式（透明无界）"><span class="toc-number">3.13.</span> <span class="toc-text">11.本博客样式（透明无界）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#精简部分widget数据"><span class="toc-number">3.14.</span> <span class="toc-text">精简部分widget数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gitalk评论增加评论开关，评论列表中标记博主"><span class="toc-number">3.15.</span> <span class="toc-text">gitalk评论增加评论开关，评论列表中标记博主</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#以上配置好后"><span class="toc-number">3.16.</span> <span class="toc-text">以上配置好后</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写在后面"><span class="toc-number">4.</span> <span class="toc-text">写在后面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图"><span class="toc-number">5.</span> <span class="toc-text">文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#效果如下（多图左右拉查看）"><span class="toc-number">5.1.</span> <span class="toc-text">效果如下（多图左右拉查看）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#博客快照："><span class="toc-number">6.</span> <span class="toc-text">博客快照：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提供hexo博客目录下依赖包-package-json"><span class="toc-number">7.</span> <span class="toc-text">提供hexo博客目录下依赖包 package.json</span></a></li></ol>
-    </nav>
-  </div>
-</aside>
-
-<main class="main" role="main">
-  <div class="content">
-  <article id="post-theme/博客源码分享" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-    
-    <div class="article-header">
-      
-        
-  
-    <h1 class="article-title" itemprop="name">
-      博客源码分享
-    </h1>
-  
-
-      
-      <div class="article-meta">
-        <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/posts/1a54ada2/" class="article-date">
-	  <time datetime="2019-09-19T14:10:43.000Z" itemprop="datePublished">2019-09-19</time>
-	</a>
+            <i>·</i>
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>次浏览
 </span>
-        
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/">工具教程</a>►<a class="article-category-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/%E4%B8%BB%E9%A2%98%E5%B7%A5%E5%85%B7/">主题工具</a>
-  </span>
-
-        
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/" rel="tag">工具教程</a>
-  </span>
 
 
-        
-
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/posts/1a54ada2/#comments" class="article-comment-link">评论</a></span>
-        
-      </div>
-    </div>
-    <div class="article-entry marked-body" itemprop="articleBody">
-      
-        <h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><blockquote>
+        </div>
+        <div class="post-count-custom">
+            <i class="icon icon-lg icon-comment-o"></i>
+            阅读本文可能花费您&nbsp;<span class="post-count">13</span>&nbsp;分钟
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><blockquote>
 <p>博客源码包括两个主题<a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">icarus</a>和<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">next</a>，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的需要的部分配置，其余的配置参照<a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">icarus主题配置</a>和<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">next主题配置</a>。<br>因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。<br>膜拜和感谢所有模块的原作者,orz👻,辛苦了。  </p>
 </blockquote>
 <p>欢迎围观：<a href="https://github.com/removeif/hexo-theme-icarus-removeif.git" target="_blank" rel="noopener">博客+主题源码</a>、<a href="https://github.com/removeif/hexo-theme-amazing.git" target="_blank" rel="noopener">纯主题源码</a>、<a href="https://removeif.github.io/" target="_blank" rel="noopener">博主博客</a></p>
@@ -460,12 +275,12 @@
 <li>gitalk评论增加评论开关，评论列表中标记博主</li>
 <li>还有什么新的，好的feature欢迎大家随时提出来，有能力有时间就做出来</li>
 </ul>
-<h3 id="二、部分配置说明："><a href="#二、部分配置说明：" class="headerlink" title="二、部分配置说明："></a>二、部分配置说明：</h3><h4 id="本机环境："><a href="#本机环境：" class="headerlink" title="本机环境："></a>本机环境：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">192:hexo-theme-icarus-removeif xx$ node -v</span><br><span class="line">v11.1.0</span><br><span class="line">192:hexo-theme-icarus-removeif xx$ npm -v</span><br><span class="line">6.4.1</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line">#### 克隆博客代码到本地</span><br><span class="line">&#96;&#96;&#96;jshelllanguage</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;removeif&#x2F;hexo-theme-icarus-removeif.git</span><br></pre></td></tr></table></figure>
+<h3 id="二、部分配置说明："><a href="#二、部分配置说明：" class="headerlink" title="二、部分配置说明："></a>二、部分配置说明：</h3><h4 id="本机环境："><a href="#本机环境：" class="headerlink" title="本机环境："></a>本机环境：</h4><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">192:hexo-theme-icarus-removeif xx$ node -v</span><br><span class="line">v11.1.0</span><br><span class="line">192:hexo-theme-icarus-removeif xx$ npm -v</span><br><span class="line">6.4.1</span><br><span class="line">```  </span><br><span class="line">#### 克隆博客代码到本地</span><br><span class="line">```jshelllanguage</span><br><span class="line">git clone https://github.com/removeif/hexo-theme-icarus-removeif.git</span><br></pre></td></tr></tbody></table></figure>
 <h4 id="开始部分配置："><a href="#开始部分配置：" class="headerlink" title="开始部分配置："></a>开始部分配置：</h4><p><strong>敲黑板！！！！首先全局以及主题中的<code>_config.yml</code>配置成自己的对应参数。</strong></p>
 <h4 id="1-热门推荐，最新评论："><a href="#1-热门推荐，最新评论：" class="headerlink" title="1.热门推荐，最新评论："></a>1.热门推荐，最新评论：</h4><p><strong>仅针对gitalk评论有效，如果配置完后显示<a href="https://removeif.github.io/" target="_blank" rel="noopener">本博客</a>相关评论、推荐，请详细阅读这一条</strong><br>热门推荐，最新评论，文章评论数关联的js文件路径：themes/icarus/source/js/comment-issue-data.js<br>以下引号里的地址改成自己对应的博客评论的issues的仓库相关的值。repoIssuesUrl改两个值（removeif和blog_comment改成自己对应的）</p>
-<figure class="highlight yaml"><figcaption><span>themes/icarus/source/js/comment-issue-data.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">评论issues仓库</span> <span class="string">by.removeif</span> <span class="string">https://removeif.github.io/</span></span><br><span class="line"><span class="string">var</span> <span class="string">repoIssuesUrl</span> <span class="string">=</span> <span class="string">"https://api.github.com/repos/removeif/blog_comment/issues"</span><span class="string">;</span> <span class="string">//</span> <span class="string">removeif：用户名，blog_comment：评论的issue仓库</span></span><br><span class="line"><span class="string">//</span> <span class="string">评论issues仓库</span> <span class="string">clientId、clientSecret怎么申请自行搜索，关于这暴露两个参数的安全问题，查看</span> <span class="string">https://removeif.github.io/2019/09/19/博客源码分享.html#1-热门推荐，最新评论：</span></span><br><span class="line"><span class="string">var</span> <span class="string">clientId</span> <span class="string">=</span> <span class="string">"46a9f3481b46ea0129d8"</span><span class="string">;</span></span><br><span class="line"><span class="string">var</span> <span class="string">clientSecret</span> <span class="string">=</span> <span class="string">"79c7c9cb847e141757d7864453bcbf89f0655b24"</span><span class="string">;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>themes/icarus/source/js/comment-issue-data.js</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">评论issues仓库</span> <span class="string">by.removeif</span> <span class="string">https://removeif.github.io/</span></span><br><span class="line"><span class="string">var</span> <span class="string">repoIssuesUrl</span> <span class="string">=</span> <span class="string">"https://api.github.com/repos/removeif/blog_comment/issues"</span><span class="string">;</span> <span class="string">//</span> <span class="string">removeif：用户名，blog_comment：评论的issue仓库</span></span><br><span class="line"><span class="string">//</span> <span class="string">评论issues仓库</span> <span class="string">clientId、clientSecret怎么申请自行搜索，关于这暴露两个参数的安全问题，查看</span> <span class="string">https://removeif.github.io/2019/09/19/博客源码分享.html#1-热门推荐，最新评论：</span></span><br><span class="line"><span class="string">var</span> <span class="string">clientId</span> <span class="string">=</span> <span class="string">"46a9f3481b46ea0129d8"</span><span class="string">;</span></span><br><span class="line"><span class="string">var</span> <span class="string">clientSecret</span> <span class="string">=</span> <span class="string">"79c7c9cb847e141757d7864453bcbf89f0655b24"</span><span class="string">;</span></span><br></pre></td></tr></tbody></table></figure>
 <p>github api 详情可以参照<a href="https://developer.github.com/v3/#rate-limiting" target="_blank" rel="noopener">官方api说明</a><br>关于配置暴露client_id和client_secret安全性问题，gitalk作者有<a href="https://github.com/gitalk/gitalk/issues/150" target="_blank" rel="noopener">解释</a><br>对应主题中的<code>_config.yml</code>要开启如下配置，xxx换成自己的，否则无效。</p>
-<figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">gitalk</span></span><br><span class="line">    <span class="attr">owner:</span> <span class="string">xxx</span>         <span class="comment"># (required) GitHub user name</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">xxx</span>          <span class="comment"># (required) GitHub repository name</span></span><br><span class="line">    <span class="attr">client_id:</span> <span class="string">xxx</span>     <span class="comment"># (required) OAuth application client id</span></span><br><span class="line">    <span class="attr">client_secret:</span> <span class="string">xxx</span> <span class="comment"># (required) OAuth application client secret</span></span><br><span class="line">    <span class="attr">admin:</span> <span class="string">xxx</span>  <span class="comment">#此账户一般为用户名 GitHub user name 文章中能创建issue需要此用户登录才可以，点了创建issue后刷新一遍才能看到！！！！</span></span><br><span class="line">    <span class="attr">create_issue_manually:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">distraction_free_mode:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">has_hot_recommend:</span> <span class="literal">true</span> <span class="comment"># 是否有热门推荐</span></span><br><span class="line">    <span class="attr">has_latest_comment:</span> <span class="literal">true</span> <span class="comment">#是否有最新评论</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>themes/icarus/_config.yml &gt;folded</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">gitalk</span></span><br><span class="line">    <span class="attr">owner:</span> <span class="string">xxx</span>         <span class="comment"># (required) GitHub user name</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">xxx</span>          <span class="comment"># (required) GitHub repository name</span></span><br><span class="line">    <span class="attr">client_id:</span> <span class="string">xxx</span>     <span class="comment"># (required) OAuth application client id</span></span><br><span class="line">    <span class="attr">client_secret:</span> <span class="string">xxx</span> <span class="comment"># (required) OAuth application client secret</span></span><br><span class="line">    <span class="attr">admin:</span> <span class="string">xxx</span>  <span class="comment">#此账户一般为用户名 GitHub user name 文章中能创建issue需要此用户登录才可以，点了创建issue后刷新一遍才能看到！！！！</span></span><br><span class="line">    <span class="attr">create_issue_manually:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">distraction_free_mode:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">has_hot_recommend:</span> <span class="literal">true</span> <span class="comment"># 是否有热门推荐</span></span><br><span class="line">    <span class="attr">has_latest_comment:</span> <span class="literal">true</span> <span class="comment">#是否有最新评论</span></span><br></pre></td></tr></tbody></table></figure>
 <p>说明：</p>
 <ul>
 <li><code>has_hot_recommend: true</code> 是否开启首页热评，false-不开启，true-开启</li>
@@ -478,300 +293,556 @@
 <h4 id="3-影音数据文件："><a href="#3-影音数据文件：" class="headerlink" title="3.影音数据文件："></a>3.影音数据文件：</h4><p>文件路径：<br>音乐：themes/icarus/source/json_data/music.json<br>视频：themes/icarus/source/json_data/video.json<br>相应格式增加自己需要的数据。    </p>
 <h4 id="4-关于页面时间轴记录数据文件："><a href="#4-关于页面时间轴记录数据文件：" class="headerlink" title="4.关于页面时间轴记录数据文件："></a>4.关于页面时间轴记录数据文件：</h4><p>文件路径：themes/icarus/source/json_data/record.json<br>相应格式增加自己需要的数据。</p>
 <h4 id="5-看板娘配置"><a href="#5-看板娘配置" class="headerlink" title="5.看板娘配置"></a>5.看板娘配置</h4><p>主题中的<code>_config.yml</code>配置如下设置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">live2Dswitch: off #live2D开关 on为打开,off为关闭</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">live2Dswitch: off #live2D开关 on为打开,off为关闭</span><br></pre></td></tr></tbody></table></figure>
 
 <h4 id="6-置顶设置："><a href="#6-置顶设置：" class="headerlink" title="6.置顶设置："></a>6.置顶设置：</h4><p>.md文章头部数据中加入top值，top值越大越靠前，大于0显示置顶图标。<br>修改依赖包中文件removeif/node_modules/hexo-generator-index/lib/generator.js如下：</p>
-<figure class="highlight js"><figcaption><span>node_modules/hexo-generator-index/lib/generator.js >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"><span class="keyword">const</span> pagination = <span class="built_in">require</span>(<span class="string">'hexo-pagination'</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> config = <span class="keyword">this</span>.config;</span><br><span class="line">    <span class="keyword">var</span> posts = locals.posts;</span><br><span class="line">    posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a.top == <span class="literal">undefined</span>)&#123;</span><br><span class="line">            a.top = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(b.top == <span class="literal">undefined</span>)&#123;</span><br><span class="line">            b.top = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(a.top == b.top)&#123;</span><br><span class="line">            <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">           <span class="keyword">return</span> b.top - a.top;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">'page'</span>;</span><br><span class="line">    <span class="keyword">return</span> pagination(<span class="string">''</span>, posts, &#123;</span><br><span class="line">        perPage: config.index_generator.per_page,</span><br><span class="line">        layout: [<span class="string">'index'</span>, <span class="string">'archive'</span>],</span><br><span class="line">        format: paginationDir + <span class="string">'/%d/'</span>,</span><br><span class="line">        data: &#123;</span><br><span class="line">            __index: <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>node_modules/hexo-generator-index/lib/generator.js &gt;folded</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"><span class="keyword">const</span> pagination = <span class="built_in">require</span>(<span class="string">'hexo-pagination'</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>{</span><br><span class="line">    <span class="keyword">var</span> config = <span class="keyword">this</span>.config;</span><br><span class="line">    <span class="keyword">var</span> posts = locals.posts;</span><br><span class="line">    posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>{</span><br><span class="line">        <span class="keyword">if</span>(a.top == <span class="literal">undefined</span>){</span><br><span class="line">            a.top = <span class="number">0</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(b.top == <span class="literal">undefined</span>){</span><br><span class="line">            b.top = <span class="number">0</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span>(a.top == b.top){</span><br><span class="line">            <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">        }<span class="keyword">else</span>{</span><br><span class="line">           <span class="keyword">return</span> b.top - a.top;</span><br><span class="line">        }</span><br><span class="line">    });</span><br><span class="line">    <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">'page'</span>;</span><br><span class="line">    <span class="keyword">return</span> pagination(<span class="string">''</span>, posts, {</span><br><span class="line">        perPage: config.index_generator.per_page,</span><br><span class="line">        layout: [<span class="string">'index'</span>, <span class="string">'archive'</span>],</span><br><span class="line">        format: paginationDir + <span class="string">'/%d/'</span>,</span><br><span class="line">        data: {</span><br><span class="line">            __index: <span class="literal">true</span></span><br><span class="line">        }</span><br><span class="line">    });</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
 <h4 id="7-配置文章中推荐文章模块"><a href="#7-配置文章中推荐文章模块" class="headerlink" title="7.配置文章中推荐文章模块"></a>7.配置文章中推荐文章模块</h4><p>根据配置的recommend值（必须大于0），值越大越靠前，相等取最新的，最多取5条。recommend（6.中top值也在下面示例）配置在.md文章头中，如下  </p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">博客源码分享</span></span><br><span class="line"><span class="attr">top:</span> <span class="number">1</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">recommend:</span> <span class="number">1</span> </span><br><span class="line"><span class="attr">keywords:</span> <span class="string">categories-github</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="number">-09</span><span class="number">-19</span> <span class="number">22</span><span class="string">:10:43</span></span><br><span class="line"><span class="attr">thumbnail:</span> <span class="string">https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221611.png</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">工具教程</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">[工具教程,主题工具]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">博客源码分享</span></span><br><span class="line"><span class="attr">top:</span> <span class="number">1</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">recommend:</span> <span class="number">1</span> </span><br><span class="line"><span class="attr">keywords:</span> <span class="string">categories-github</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="number">-09</span><span class="number">-19</span> <span class="number">22</span><span class="string">:10:43</span></span><br><span class="line"><span class="attr">thumbnail:</span> <span class="string">https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221611.png</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">工具教程</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">[工具教程,主题工具]</span></span><br></pre></td></tr></tbody></table></figure>
 <h4 id="8-文章中某个代码块折叠的方法"><a href="#8-文章中某个代码块折叠的方法" class="headerlink" title="8.文章中某个代码块折叠的方法"></a>8.文章中某个代码块折叠的方法</h4><p>代码块头部加入标记 <code>&gt;folded</code>，如下代码块中使用。</p>
-<figure class="highlight java"><figcaption><span>main.java >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用示例，.md 文件中头行标记"&gt;folded"</span></span><br><span class="line"><span class="comment">// ```java main.java &gt;folded</span></span><br><span class="line"><span class="comment">// import main.java</span></span><br><span class="line"><span class="comment">// private static void main()&#123;</span></span><br><span class="line"><span class="comment">//     // test</span></span><br><span class="line"><span class="comment">//     int i = 0;</span></span><br><span class="line"><span class="comment">//     return i;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="comment">// \\```</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>main.java &gt;folded</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用示例，.md 文件中头行标记"&gt;folded"</span></span><br><span class="line"><span class="comment">// ```java main.java &gt;folded</span></span><br><span class="line"><span class="comment">// import main.java</span></span><br><span class="line"><span class="comment">// private static void main(){</span></span><br><span class="line"><span class="comment">//     // test</span></span><br><span class="line"><span class="comment">//     int i = 0;</span></span><br><span class="line"><span class="comment">//     return i;</span></span><br><span class="line"><span class="comment">// }</span></span><br><span class="line"><span class="comment">// \\```</span></span><br></pre></td></tr></tbody></table></figure>
 <h4 id="9-加入加密文章"><a href="#9-加入加密文章" class="headerlink" title="9.加入加密文章"></a>9.加入加密文章</h4><p>如下需要加密的文章头部加入以下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 2019成长记01</span><br><span class="line">top: -1</span><br><span class="line">toc: true</span><br><span class="line">keywords: categories-java</span><br><span class="line"></span><br><span class="line">#以下为文章加密信息</span><br><span class="line">encrypt: true</span><br><span class="line">password: 123456 #此处为文章密码</span><br><span class="line">abstract: 咦，这是一篇加密文章，好像需要输入密码才能查看呢！</span><br><span class="line">message: 嗨，请准确无误地输入密码查看哟！</span><br><span class="line">wrong_pass_message: 不好意思，密码没对哦，在检查检查呢！</span><br><span class="line">wrong_hash_message: 不好意思，信息无法验证！</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 2019成长记01</span><br><span class="line">top: -1</span><br><span class="line">toc: true</span><br><span class="line">keywords: categories-java</span><br><span class="line"></span><br><span class="line">#以下为文章加密信息</span><br><span class="line">encrypt: true</span><br><span class="line">password: 123456 #此处为文章密码</span><br><span class="line">abstract: 咦，这是一篇加密文章，好像需要输入密码才能查看呢！</span><br><span class="line">message: 嗨，请准确无误地输入密码查看哟！</span><br><span class="line">wrong_pass_message: 不好意思，密码没对哦，在检查检查呢！</span><br><span class="line">wrong_hash_message: 不好意思，信息无法验证！</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
 <p>注：<strong>加密文章不会出现在最新文章列表widget中，也不会出现在文章中推荐列表中，首页列表中需要设置top: -1 让它排在最后比较合理一些。</strong></p>
 <h4 id="10-碎碎念的使用"><a href="#10-碎碎念的使用" class="headerlink" title="10.碎碎念的使用"></a>10.碎碎念的使用</h4><p>在github中，创建碎碎念issue，并且打上对应的label（<code>eg:666666</code>）对应配置中为id，填写到source/self-talking/index.md文件中如下对应位置，其余配置也要改成自己的，如clientID等。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="keyword">var</span> gitalk = <span class="keyword">new</span> Gitalk(&#123;</span><br><span class="line">        clientID: <span class="string">'46a9f3481b46ea0129d8'</span>,</span><br><span class="line">        clientSecret: <span class="string">'79c7c9cb847e141757d7864453bcbf89f0655b24'</span>,</span><br><span class="line">        id: <span class="string">'666666'</span>,</span><br><span class="line">        repo: <span class="string">'issue_database'</span>,</span><br><span class="line">        owner: <span class="string">'removeif'</span>,</span><br><span class="line">        admin: <span class="string">"removeif"</span>,</span><br><span class="line">        createIssueManually: <span class="literal">true</span>,</span><br><span class="line">        distractionFreeMode: <span class="literal">false</span></span><br><span class="line">    &#125;)</span><br><span class="line">    gitalk.render(<span class="string">'comment-container1'</span>)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
-<p>如下：<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200119181607.png" alt="碎碎念"></p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="keyword">var</span> gitalk = <span class="keyword">new</span> Gitalk({</span><br><span class="line">        clientID: <span class="string">'46a9f3481b46ea0129d8'</span>,</span><br><span class="line">        clientSecret: <span class="string">'79c7c9cb847e141757d7864453bcbf89f0655b24'</span>,</span><br><span class="line">        id: <span class="string">'666666'</span>,</span><br><span class="line">        repo: <span class="string">'issue_database'</span>,</span><br><span class="line">        owner: <span class="string">'removeif'</span>,</span><br><span class="line">        admin: <span class="string">"removeif"</span>,</span><br><span class="line">        createIssueManually: <span class="literal">true</span>,</span><br><span class="line">        distractionFreeMode: <span class="literal">false</span></span><br><span class="line">    })</span><br><span class="line">    gitalk.render(<span class="string">'comment-container1'</span>)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p>如下：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200119181607.png" alt="碎碎念" title="">
+                </div>
+                <div class="image-caption">碎碎念</div>
+            </figure>
 <h4 id="11-本博客样式（透明无界）"><a href="#11-本博客样式（透明无界）" class="headerlink" title="11.本博客样式（透明无界）"></a>11.本博客样式（透明无界）</h4><p>只需要放开themes/icarus/source/css/base.styl文件中以下样式代码注释即可，默认是注释的没启用</p>
-<figure class="highlight"><figcaption><span>base.styl >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">//=================本博客使用样式   start</span><br><span class="line"></span><br><span class="line">// 首页去图</span><br><span class="line"><span class="selector-class">.body_hot_comment</span> <span class="selector-class">.comment-content</span> <span class="selector-class">.card-comment-item</span> <span class="selector-class">.ava</span>, <span class="selector-class">.media-left</span>, <span class="selector-class">.is-6-widescreen</span> <span class="selector-class">.card-image</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">hover-color = #deeafb;</span><br><span class="line">// 去card</span><br><span class="line"><span class="selector-class">.card</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: unset;</span><br><span class="line">    //box-shadow: unset;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.navbar</span>, <span class="selector-tag">footer</span><span class="selector-class">.footer</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: unset;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.navbar</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.footer</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.card</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.pagination</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.post-navigation</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: hover-color;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">4px</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.05</span>),<span class="number">0</span> <span class="number">0</span> <span class="number">1px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.pagination</span>, <span class="selector-class">.post-navigation</span>&#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.pagination</span> <span class="selector-class">.pagination-link</span><span class="selector-pseudo">:not(.is-current)</span>, <span class="selector-class">.pagination</span> <span class="selector-class">.pagination-previous</span>, <span class="selector-class">.pagination</span> <span class="selector-class">.pagination-next</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>:<span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.timeline</span> <span class="selector-class">.media</span><span class="selector-pseudo">:last-child</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: unset;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.footer</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">4px</span> <span class="number">10px</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.05</span>);</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">3rem</span> <span class="number">1.5rem</span> <span class="number">2rem</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">1087px</span>)</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line">        <span class="selector-tag">background-color</span>: <span class="selector-tag">unset</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">//=================本博客使用样式   end</span><br></pre></td></tr></table></figure>
-<p>如下：<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218084713.png" alt="无界样式"></p>
-<h4 id="精简部分widget数据"><a href="#精简部分widget数据" class="headerlink" title="精简部分widget数据"></a>精简部分widget数据</h4><p>widget中的归档和分类和标签精简了，数据多时很丑，改为了分别展示5条和10条和20条，增加了查看全部。<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200119181201.png" alt="查看全部"></p>
-<h4 id="gitalk评论增加评论开关，评论列表中标记博主"><a href="#gitalk评论增加评论开关，评论列表中标记博主" class="headerlink" title="gitalk评论增加评论开关，评论列表中标记博主"></a>gitalk评论增加评论开关，评论列表中标记博主</h4><p>需要关闭评论的在文章头部加入 <code>comments: false</code>,原来已经评论的依然会显示，如下<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218084943.png" alt=""></p>
+<figure class="highlight"><figcaption><span>base.styl &gt;folded</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">//=================本博客使用样式   start</span><br><span class="line"></span><br><span class="line">// 首页去图</span><br><span class="line"><span class="selector-class">.body_hot_comment</span> <span class="selector-class">.comment-content</span> <span class="selector-class">.card-comment-item</span> <span class="selector-class">.ava</span>, <span class="selector-class">.media-left</span>, <span class="selector-class">.is-6-widescreen</span> <span class="selector-class">.card-image</span> {</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">hover-color = #deeafb;</span><br><span class="line">// 去card</span><br><span class="line"><span class="selector-class">.card</span> {</span><br><span class="line">    <span class="attribute">background-color</span>: unset;</span><br><span class="line">    //box-shadow: unset;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.navbar</span>, <span class="selector-tag">footer</span><span class="selector-class">.footer</span> {</span><br><span class="line">    <span class="attribute">background-color</span>: unset;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.navbar</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.footer</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.card</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.pagination</span><span class="selector-pseudo">:hover</span>,</span><br><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:not(.night)</span> <span class="selector-class">.post-navigation</span><span class="selector-pseudo">:hover</span>{</span><br><span class="line">    <span class="attribute">background-color</span>: hover-color;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">4px</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.05</span>),<span class="number">0</span> <span class="number">0</span> <span class="number">1px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.pagination</span>, <span class="selector-class">.post-navigation</span>{</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.pagination</span> <span class="selector-class">.pagination-link</span><span class="selector-pseudo">:not(.is-current)</span>, <span class="selector-class">.pagination</span> <span class="selector-class">.pagination-previous</span>, <span class="selector-class">.pagination</span> <span class="selector-class">.pagination-next</span> {</span><br><span class="line">    <span class="attribute">background-color</span>:<span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.timeline</span> <span class="selector-class">.media</span><span class="selector-pseudo">:last-child</span><span class="selector-pseudo">:after</span> {</span><br><span class="line">    <span class="attribute">background</span>: unset;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.footer</span> {</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">4px</span> <span class="number">10px</span> <span class="number">10px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.05</span>);</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">3rem</span> <span class="number">1.5rem</span> <span class="number">2rem</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">1087px</span>)</span><br><span class="line">    .navbar-menu {</span><br><span class="line">        <span class="selector-tag">background-color</span>: <span class="selector-tag">unset</span>;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">//=================本博客使用样式   end</span><br></pre></td></tr></tbody></table></figure>
+<p>如下：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218084713.png" alt="无界样式" title="">
+                </div>
+                <div class="image-caption">无界样式</div>
+            </figure>
+<h4 id="精简部分widget数据"><a href="#精简部分widget数据" class="headerlink" title="精简部分widget数据"></a>精简部分widget数据</h4><p>widget中的归档和分类和标签精简了，数据多时很丑，改为了分别展示5条和10条和20条，增加了查看全部。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200119181201.png" alt="查看全部" title="">
+                </div>
+                <div class="image-caption">查看全部</div>
+            </figure>
+
+<h4 id="gitalk评论增加评论开关，评论列表中标记博主"><a href="#gitalk评论增加评论开关，评论列表中标记博主" class="headerlink" title="gitalk评论增加评论开关，评论列表中标记博主"></a>gitalk评论增加评论开关，评论列表中标记博主</h4><p>需要关闭评论的在文章头部加入 <code>comments: false</code>,原来已经评论的依然会显示，如下</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218084943.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+
 <p>原来已有博客文章的迁移，只需要把原来对应的文章放到source/_posts里即可。然后去对应文章下面创建评论issue。  </p>
-<h4 id="以上配置好后"><a href="#以上配置好后" class="headerlink" title="以上配置好后"></a>以上配置好后</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">npm</span> <span class="string">install</span> <span class="comment">#安装依赖包（只需要执行一次）ps:如果是纯主题仓库，可直接把本文最后的json文件复制到博客下面的依赖文件package.json后在执行此命令</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">clean</span> <span class="comment">#清除缓存</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">g</span> <span class="comment">#编译 </span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">s</span> <span class="comment">#启动服务 </span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">d</span> <span class="comment">#推到远程</span></span><br></pre></td></tr></table></figure>
+<h4 id="以上配置好后"><a href="#以上配置好后" class="headerlink" title="以上配置好后"></a>以上配置好后</h4><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">npm</span> <span class="string">install</span> <span class="comment">#安装依赖包（只需要执行一次）ps:如果是纯主题仓库，可直接把本文最后的json文件复制到博客下面的依赖文件package.json后在执行此命令</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">clean</span> <span class="comment">#清除缓存</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">g</span> <span class="comment">#编译 </span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">s</span> <span class="comment">#启动服务 </span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">d</span> <span class="comment">#推到远程</span></span><br></pre></td></tr></tbody></table></figure>
 <p>安装依赖包（只需要执行一次），以后修改了代码 只需要执行后面几条就好。  </p>
 <p>ok,enjoy it!！👏👏</p>
 <p>有什么问题，欢迎issue里讨论。</p>
 <h3 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h3><p>如果你有问题请反馈: <a href="https://github.com/removeif/hexo-theme-icarus-removeif/issues" target="_blank" rel="noopener">issues</a> （请务必先于issues中寻找答案）<br>如果你喜欢该主题: <a href="https://github.com/removeif/hexo-theme-icarus-removeif" target="_blank" rel="noopener">star</a><br>如果你想定制主题: <a href="https://github.com/removeif/hexo-theme-icarus-removeif" target="_blank" rel="noopener">fork</a> </p>
 <h3 id="文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图"><a href="#文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图" class="headerlink" title="文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图"></a>文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图</h3><p>使用方法：md文章中放入以下代码</p>
-<figure class="highlight html"><figcaption><span>index.html>folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 横竖图</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"justified-gallery"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![张芷溪](http://wx1.sinaimg.cn/large/b5d1b710ly1g6bz7n92s7j212w0nr1kx.jpg) ![李一桐](http://wx2.sinaimg.cn/mw1024/005RAHfgly1fvfc4f19qfj33402c0qv9.jpg) ![gakki](http://wx1.sinaimg.cn/mw1024/70396e5agy1g5qe457i6yj21660ogtap.jpg) ![李一桐](http://wx1.sinaimg.cn/mw1024/005RAHfgly1fuzz17s2q3j32e43cku0x.jpg) ![彭小苒](http://wx1.sinaimg.cn/mw1024/d79c9b94ly1g1pb1uthr5j21f02iox6t.jpg)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">+ 横图4</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"img-x"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png) ![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">+ 竖图5</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"img-y"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![电池](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg) ![打王者荣耀](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141906.jpg) ![支付宝付款](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141926.jpg) ![锤子便签](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145956.jpg) ![电池](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><figcaption><span>index.html&gt;folded</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 横竖图</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"justified-gallery"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![张芷溪](http://wx1.sinaimg.cn/large/b5d1b710ly1g6bz7n92s7j212w0nr1kx.jpg) ![李一桐](http://wx2.sinaimg.cn/mw1024/005RAHfgly1fvfc4f19qfj33402c0qv9.jpg) ![gakki](http://wx1.sinaimg.cn/mw1024/70396e5agy1g5qe457i6yj21660ogtap.jpg) ![李一桐](http://wx1.sinaimg.cn/mw1024/005RAHfgly1fuzz17s2q3j32e43cku0x.jpg) ![彭小苒](http://wx1.sinaimg.cn/mw1024/d79c9b94ly1g1pb1uthr5j21f02iox6t.jpg)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">+ 横图4</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"img-x"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png) ![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">+ 竖图5</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"img-y"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">![电池](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg) ![打王者荣耀](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141906.jpg) ![支付宝付款](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141926.jpg) ![锤子便签](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145956.jpg) ![电池](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg)<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 <h4 id="效果如下（多图左右拉查看）"><a href="#效果如下（多图左右拉查看）" class="headerlink" title="效果如下（多图左右拉查看）"></a>效果如下（多图左右拉查看）</h4><ul>
 <li>横竖图</li>
 </ul>
 <div class="justified-gallery">
 
-<p><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191128222602.jpg" alt="李庚希"> <img src="http://wx4.sinaimg.cn/mw1024/d79c9b94ly1g0pmoa18rkj23wm2lrb2e.jpg" alt="彭小苒"> <img src="http://wx1.sinaimg.cn/mw1024/d79c9b94ly1g1pb1uthr5j21f02iox6t.jpg" alt="彭小苒"> <img src="http://wx3.sinaimg.cn/mw1024/63112839gy1g423ovlwzaj234022ou0y.jpg" alt="唐艺昕"> <img src="http://wx3.sinaimg.cn/mw1024/0068cFqEgy1g5v23wwjwdj30sg0ld0vo.jpg" alt="张芷溪"> <img src="http://wx3.sinaimg.cn/mw1024/005RAHfgly1g2jhakgz41j31sc2dsx6u.jpg" alt="李一桐"> <img src="http://wx4.sinaimg.cn/large/70396e5agy1fml9habgdcg20p00hd7wz.gif" alt="gakki"></div></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://wx4.sinaimg.cn/large/70396e5agy1fml9habgdcg20p00hd7wz.gif" alt="李庚希](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191128222602.jpg) ![彭小苒](http://wx4.sinaimg.cn/mw1024/d79c9b94ly1g0pmoa18rkj23wm2lrb2e.jpg) ![彭小苒](http://wx1.sinaimg.cn/mw1024/d79c9b94ly1g1pb1uthr5j21f02iox6t.jpg) ![唐艺昕](http://wx3.sinaimg.cn/mw1024/63112839gy1g423ovlwzaj234022ou0y.jpg) ![张芷溪](http://wx3.sinaimg.cn/mw1024/0068cFqEgy1g5v23wwjwdj30sg0ld0vo.jpg) ![李一桐](http://wx3.sinaimg.cn/mw1024/005RAHfgly1g2jhakgz41j31sc2dsx6u.jpg) ![gakki" title="">
+                </div>
+                <div class="image-caption">李庚希](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191128222602.jpg) ![彭小苒](http://wx4.sinaimg.cn/mw1024/d79c9b94ly1g0pmoa18rkj23wm2lrb2e.jpg) ![彭小苒](http://wx1.sinaimg.cn/mw1024/d79c9b94ly1g1pb1uthr5j21f02iox6t.jpg) ![唐艺昕](http://wx3.sinaimg.cn/mw1024/63112839gy1g423ovlwzaj234022ou0y.jpg) ![张芷溪](http://wx3.sinaimg.cn/mw1024/0068cFqEgy1g5v23wwjwdj30sg0ld0vo.jpg) ![李一桐](http://wx3.sinaimg.cn/mw1024/005RAHfgly1g2jhakgz41j31sc2dsx6u.jpg) ![gakki</div>
+            </figure></div>
+
 <ul>
 <li>横图4</li>
 </ul>
 <div class="img-x">
 
-<p><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png" alt="v4"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png" alt="v3"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png" alt="v4"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png" alt="v3"></div></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png" alt="v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png) ![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3" title="">
+                </div>
+                <div class="image-caption">v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png) ![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3</div>
+            </figure></div>
+
 <ul>
 <li>竖图5</li>
 </ul>
 <div class="img-y">
 
-<p><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg" alt="电池"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141906.jpg" alt="打王者荣耀"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141926.jpg" alt="支付宝付款"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145956.jpg" alt="锤子便签"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg" alt="电池"></div></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg" alt="电池](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg) ![打王者荣耀](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141906.jpg) ![支付宝付款](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141926.jpg) ![锤子便签](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145956.jpg) ![电池" title="">
+                </div>
+                <div class="image-caption">电池](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145940.jpg) ![打王者荣耀](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141906.jpg) ![支付宝付款](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024141926.jpg) ![锤子便签](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191024145956.jpg) ![电池</div>
+            </figure></div>
+
 <h3 id="博客快照："><a href="#博客快照：" class="headerlink" title="博客快照："></a>博客快照：</h3><ul>
 <li>主页</li>
 </ul>
 <div class="img-x">
 
-<p><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191107231051.png" alt="v5"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png" alt="v4"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png" alt="v3"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191014183620.png" alt="v2"> <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221347.png" alt="v1"></div></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221347.png" alt="v5](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191107231051.png) ![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png) ![v2](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191014183620.png) ![v1" title="">
+                </div>
+                <div class="image-caption">v5](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191107231051.png) ![v4](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191022182226.png) ![v3](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191018114126.png) ![v2](https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191014183620.png) ![v1</div>
+            </figure></div>
+
 <ul>
-<li>深色主题<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218085241.png" alt=""></li>
-<li>置顶<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190926210437.png" alt=""></li>
-<li>文章评论数<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191016133335.png" alt=""></li>
-<li>推荐文章模块<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191107131513.png" alt=""></li>
-<li>归档<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200214190807.png" alt=""></li>
-<li>留言<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221820.png" alt=""></li>
-<li>友链<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218085424.png" alt=""></li>
-<li>美图<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221949.png" alt=""></li>
-<li>影音<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919222030.png" alt=""></li>
-<li>关于<br><img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919222131.png" alt=""></li>
+<li>深色主题<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218085241.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>置顶<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190926210437.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>文章评论数<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191016133335.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>推荐文章模块<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20191107131513.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>归档<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200214190807.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>留言<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221820.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>友链<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20200218085424.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>美图<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919221949.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>影音<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919222030.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>关于<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2019/20190919222131.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+
+</li>
 </ul>
-<h3 id="提供hexo博客目录下依赖包-package-json"><a href="#提供hexo博客目录下依赖包-package-json" class="headerlink" title="提供hexo博客目录下依赖包 package.json"></a>提供hexo博客目录下依赖包 package.json</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"hexo-site"</span>,</span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"3.0.0"</span>,</span><br><span class="line">  <span class="attr">"private"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"scripts"</span>: &#123;</span><br><span class="line">    <span class="attr">"build"</span>: <span class="string">"hexo generate"</span>,</span><br><span class="line">    <span class="attr">"clean"</span>: <span class="string">"hexo clean"</span>,</span><br><span class="line">    <span class="attr">"deploy"</span>: <span class="string">"hexo deploy"</span>,</span><br><span class="line">    <span class="attr">"server"</span>: <span class="string">"hexo server"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"hexo"</span>: &#123;</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"4.2.0"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="attr">"ajv"</span>: <span class="string">"^6.10.2"</span>,</span><br><span class="line">    <span class="attr">"bulma-stylus"</span>: <span class="string">"0.8.0"</span>,</span><br><span class="line">    <span class="attr">"deepmerge"</span>: <span class="string">"^4.2.2"</span>,</span><br><span class="line">    <span class="attr">"hexo"</span>: <span class="string">"^4.2.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-blog-encrypt"</span>: <span class="string">"^3.0.3"</span>,</span><br><span class="line">    <span class="attr">"hexo-deployer-git"</span>: <span class="string">"^2.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-feed"</span>: <span class="string">"^2.2.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-log"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-pagination"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-inferno"</span>: <span class="string">"^0.1.1"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-server"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-util"</span>: <span class="string">"^1.8.0"</span>,</span><br><span class="line">    <span class="attr">"inferno"</span>: <span class="string">"^7.3.3"</span>,</span><br><span class="line">    <span class="attr">"inferno-create-element"</span>: <span class="string">"^7.3.3"</span>,</span><br><span class="line">    <span class="attr">"js-yaml"</span>: <span class="string">"^3.13.1"</span>,</span><br><span class="line">    <span class="attr">"moment"</span>: <span class="string">"^2.22.2"</span>,</span><br><span class="line">    <span class="attr">"save"</span>: <span class="string">"^2.4.0"</span>,</span><br><span class="line">    <span class="attr">"semver"</span>: <span class="string">"&gt;=5.0.0"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
+<h3 id="提供hexo博客目录下依赖包-package-json"><a href="#提供hexo博客目录下依赖包-package-json" class="headerlink" title="提供hexo博客目录下依赖包 package.json"></a>提供hexo博客目录下依赖包 package.json</h3><figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"hexo-site"</span>,</span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"3.0.0"</span>,</span><br><span class="line">  <span class="attr">"private"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"scripts"</span>: {</span><br><span class="line">    <span class="attr">"build"</span>: <span class="string">"hexo generate"</span>,</span><br><span class="line">    <span class="attr">"clean"</span>: <span class="string">"hexo clean"</span>,</span><br><span class="line">    <span class="attr">"deploy"</span>: <span class="string">"hexo deploy"</span>,</span><br><span class="line">    <span class="attr">"server"</span>: <span class="string">"hexo server"</span></span><br><span class="line">  },</span><br><span class="line">  <span class="attr">"hexo"</span>: {</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"4.2.0"</span></span><br><span class="line">  },</span><br><span class="line">  <span class="attr">"dependencies"</span>: {</span><br><span class="line">    <span class="attr">"ajv"</span>: <span class="string">"^6.10.2"</span>,</span><br><span class="line">    <span class="attr">"bulma-stylus"</span>: <span class="string">"0.8.0"</span>,</span><br><span class="line">    <span class="attr">"deepmerge"</span>: <span class="string">"^4.2.2"</span>,</span><br><span class="line">    <span class="attr">"hexo"</span>: <span class="string">"^4.2.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-blog-encrypt"</span>: <span class="string">"^3.0.3"</span>,</span><br><span class="line">    <span class="attr">"hexo-deployer-git"</span>: <span class="string">"^2.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-feed"</span>: <span class="string">"^2.2.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-log"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-pagination"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-inferno"</span>: <span class="string">"^0.1.1"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-server"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-util"</span>: <span class="string">"^1.8.0"</span>,</span><br><span class="line">    <span class="attr">"inferno"</span>: <span class="string">"^7.3.3"</span>,</span><br><span class="line">    <span class="attr">"inferno-create-element"</span>: <span class="string">"^7.3.3"</span>,</span><br><span class="line">    <span class="attr">"js-yaml"</span>: <span class="string">"^3.13.1"</span>,</span><br><span class="line">    <span class="attr">"moment"</span>: <span class="string">"^2.22.2"</span>,</span><br><span class="line">    <span class="attr">"save"</span>: <span class="string">"^2.4.0"</span>,</span><br><span class="line">    <span class="attr">"semver"</span>: <span class="string">"&gt;=5.0.0"</span></span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新：<time datetime="2024-03-17T08:02:24.229Z" itemprop="dateUpdated">2024-03-17 16:02:24</time>
+</span>
+
+
+        
+        原文链接：<a href="/posts/1a54ada2/" target="_blank" rel="external">https://ttt.github.io/posts/1a54ada2/</a>
+        
     </div>
-    <div class="article-footer">
-      <blockquote class="mt-2x">
-  <ul class="post-copyright list-unstyled">
-    
-    <li class="post-copyright-link hidden-xs">
-      <strong>本文链接：</strong>
-      <a href="https://ttt.github.io/posts/1a54ada2/" title="博客源码分享" target="_blank" rel="external">https://ttt.github.io/posts/1a54ada2/</a>
-    </li>
-    
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
+    <footer>
+        <div onclick="location.href='https://ttt.github.io'">
+            <img src="/img/avatar.jpg" alt="田">
+            <a>田</a>
+        </div>
+    </footer>
 </blockquote>
 
+        
+    <div class="page-reward">
+        <nav class="myreward">
+            <a id="rewardBtn" href="javascript:;"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
+        </nav>
+    </div>
 
-<div class="panel panel-default panel-badger">
-  <div class="panel-body">
-    <figure class="media">
-      <div class="media-left">
-        <a href="https://github.com/cofess" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/" rel="tag">工具教程</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://ttt.github.io/posts/1a54ada2/&title=《博客源码分享》 — 田&pic=https://ttt.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
         </a>
-      </div>
-      <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">昵称</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
-        <div>个人简介。</div>
-      </div>
-    </figure>
-  </div>
-</div>
-
-
-    </div>
-  </article>
-  
-    
-  <section id="comments">
-  	
-      <div id="vcomments"></div>
-    
-  </section>
-
-
-  
-</div>
-
-  <nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-  
-  <ul class="pager pull-left">
-    
-    <li class="prev">
-      <a href="/posts/346ce02e/" title="github page网站cdn优化加速"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
-    
-    <li class="next">
-      <a href="/posts/1c5449cf/" title="博客换肤的一种实现方式思路"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
-    </li>
-    
-    
-    <li class="toggle-toc">
-      <a class="toggle-btn " data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">    <span>[&nbsp;</span><span>文章目录</span>
-        <i class="text-collapsed icon icon-anchor"></i>
-        <i class="text-in icon icon-close"></i>
-        <span>]</span>
-      </a>
-    </li>
-    
-  </ul>
-  
-  
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
-  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
-    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
-  </div> -->
-  
-  
-  <div class="bar-right">
-    
-    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
-    
-  </div>
-  </div>
-</nav>
-  
-<!-- Modal -->
-<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content donate">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <div class="modal-body">
-        <div class="donate-box">
-          <div class="donate-head">
-            <p>感谢您的支持，我会继续努力的!</p>
-          </div>
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
-              <div class="donate-payimg">
-                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
-              </div>
-              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
-              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
-              <div class="donate-payimg">
-                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
-              </div>
-              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
-              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
-            </div>
-          </div>
-          <div class="donate-footer">
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
-              </li>
-              <li role="presentation" class="">
-                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-</main>
-
-  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
-	
-	
-    <ul class="social-links">
-    	
-        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
-        
-        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
-        
-        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
-        
-        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
-        
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://ttt.github.io/posts/1a54ada2/&title=《博客源码分享》 — 田&source=写在前面
+博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://ttt.github.io/posts/1a54ada2/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《博客源码分享》 — 田&url=https://ttt.github.io/posts/1a54ada2/&via=https://ttt.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://ttt.github.io/posts/1a54ada2/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
     </ul>
+ </div>
 
-    <div class="copyright">
-    	
-        <div class="publishby">
-        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
         </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/posts/346ce02e/" id="post-prev" class="post-nav-link">
+        <h4 class="title" >
+          上一篇：github page网站cdn优化加速
+        </h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/posts/1c5449cf/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：博客换肤的一种实现方式思路">下一篇：博客换肤的一种实现方式思路</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+    
+
+    
+
+    
+
+
+</article>
+
+</div>
+
+        <footer class="footer">
+    <div class="footer-content">
+        <span class="power">
+            <i class="icon icon-lg icon-copyright"></i>
+            2017
+            <i class="icon icon-lg icon-heart"></i>
+            <a href="https://ttt.github.io">tomotoes.com</a>
+            <br/>
+            Power by
+            <a href="https://hexo.io/" target="_blank" rel="external nofollow">Hexo</a>&nbsp;·&nbsp;
+            Theme
+            <a class="tomotoeslink" href="https://github.com/tomotoes/hexo-theme-tomotoes/" target="_blank" rel="external nofollow">tomotoes</a>
+        </span>
+
+        <br/>
+
+        <span id="RunTime" style="color:#a7a7a2;"></span>
+        <br/>
+
+        <span>
+            
+	<i class="icon icon-lg icon-user">
+<span id="busuanzi_container_site_uv" style='display:none'>
+       访问用户：<span id="busuanzi_value_site_uv"></span>
+    </span>人</i>
+    ·
+    <i class="icon icon-lg icon-eye">
+    <span id="busuanzi_container_site_pv" style='display:none'>
+      访问次数：<span id="busuanzi_value_site_pv"></span>
+    </span>次
+    </i>
+
+
+        </span>
+        <br/>
+
+        <span class="license"><a  target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">博客内容遵循 知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
     </div>
 </footer>
-  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script>
-window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-</script>
 
-<script src="/js/plugin.min.js"></script>
-
-
-<script src="/js/application.js"></script>
-
-
-    <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-
-<script src="/js/insight.js"></script>
-
-
-
-
-
-
-   
-
-
-
-
-   
+    </main>
     
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/valine"></script>
-  <script type="text/javascript">
-  var GUEST = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail,link';
-  meta = meta.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#vcomments',
-    verify: false,
-    notify: false,
-    appId: '',
-    appKey: '',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: meta,
-    pageSize: '10' || 10,
-    visitor: false
-  });
-  </script>
+        
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        <span>感谢您的鼓励支持！</span>
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" data-img="/img/dog.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.png" data-alipay="/img/alipay.png">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
+                <span class="reward-toggle-item alipayPay">支付宝</span>
+            </div>
+        </label>
+        
+        <i class="icon icon-caret-up"></i>
+    </div>
+</div>
 
-     
+
+    
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://ttt.github.io/posts/1a54ada2/&title=《博客源码分享》 — 田&pic=https://ttt.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://ttt.github.io/posts/1a54ada2/&title=《博客源码分享》 — 田&source=写在前面
+博客源码包括两个主题icarus和next，在主题基础之上参照各网友博客，以及自己的一些想法做出的一些修改以及增加部分新元素。  以下是修改后的..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://ttt.github.io/posts/1a54ada2/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《博客源码分享》 — 田&url=https://ttt.github.io/posts/1a54ada2/&via=https://ttt.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://ttt.github.io/posts/1a54ada2/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p class="wechatshare">扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxUlEQVR42u3aQW4CMQwFUO5/abqtRAe+bWJB9bJC1WjmpQvL/sntFq/7r3X1l8e/P67HJ28nFi4u7pibfOAerHyTV7+jN+Pi4i5yrz72/NXPn082kxtwcXE/n5uUrWQzuLi4/4+bDD/V1gcXF/dzuMnwUy1e1UHozbMaLi7ugJunlOd+H8l3cXFxW9x7ceUtTtLulL+Oi4u7ws0LSvmlrcg1aqFwcXEPc5OiM9lMFfei/OHi4q5wo4CydUWj1wCVwxFcXNwD3PcGHJOtRt/CxcVd5D4PLCYHq/ODk8sUBxcXd51bHkKK17Dy5/+Y1XBxcQ9ze9ekqtFJtbmJ8l1cXNzD3KRx6V3hygtluVLh4uIe5paHkCDIqA4/+b8MFxd3k5tHHnmBSwpifj0UFxd3n1sdTnqd1BuaJFxc3EVuNQTJ73RMDmYuhx9cXNx1bpWYH7okRzIvnsHFxT3MnSAmYWjzEBcXF3eFW71OMXl1NWzNr27g4uKe4J44Oq0epubxKy4u7ia3eqRRHXt6ww8uLu53cZNhJi9V+WZwcXG/hdtrepqDEy4u7iJ3frkqH29GoQkuLu4Ktxd3TrqOnDLKd3FxcTvcH3GauWg0LdbeAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
 
 
 
 
+    <!-- waves按钮特效 -->
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 
+<!-- 主题配置脚本 -->
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+</script>
+
+<!-- jquery -->
+<script src="/js/jquery.min.js?v=3.0"></script>
+
+<!-- 搜索 -->
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item waves-block waves-effect" onclick="location.href='{path}'">
+    <div class="title ellipsis" title="{title}">{title}</div>
+</li>
+</template>
+
+
+<!-- main博客脚本 -->
+<script src="/js/main.min.js?v=3.0" ></script>
+
+<!-- 动画&配置 -->
+<script src="/js/script.min.js?v=3.0" ></script>
+
+<!-- 脚本管理 -->
+<script>
+
+if(window.innerWidth > 800){
+	/* 3D标题 */
+	$(".content-header").on("mousemove", threedee);
+
+	/* 底部追随鼠标 */
+	$(".footer").hover(2);
+
+	/* gotop键的涟漪 */
+	$("#gotop").hover(1);
+
+	/* 赞赏的粒子雨 */
+	$("#reward").hover(3);
+
+	/* 微信公众号的底部渲染 */
+	$("#wechat").hover(4);
+
+    /* 标题跳动 */
+    $(".archivestitle").bumpyText();
+
+	/* 图片点击放大 */
+	const postimg = jQuery(".post-content img:not(.github-emoji)");
+	postimg.on("click",function(){
+
+		mask.classList.add("in");
+		main.classList.add("Mask");
+		menu.classList.add("Mask");
+		var myimg = this.cloneNode(true);
+		myimg.classList.add("imgShow");
+
+		setTimeout(function(){
+			jQuery(myimg).animate({
+				opacity:"1"
+			},1000);
+		},0);
+
+		document.body.appendChild(myimg);
+
+		myimg.onclick=function(){
+			document.body.removeChild(myimg);
+			mask.classList.remove("in");
+			main.classList.remove("Mask");
+			menu.classList.remove("Mask");
+		};
+
+	});
+
+}
+
+/* 名字跳动 */
+$("#name").bumpyText();
+
+
+/* 网站运行时间 */
+setInterval(function () {
+	setTime("2017/10/11");
+}, 1000);
+
+/* 文章块的淡出 */
+postshow();
+
+/* 座右铭 */
+
+   getHitokoto();
+
+
+
+/* 粘贴提示 */
+G($(".post-content"), location.href, "田");
+
+
+/* 控制台 */
+if (window.console && window.console.log) {
+	setTimeout(function () {
+		console.log("\n %c 一个坏掉的番茄 %c  © Simon Ma  http://tomotoes.com \n\n", "color:#FFFFFB;background:#1abc9c;padding:5px 0;border-radius:.5rem 0 0 .5rem;", "color:#FFFFFB;background:#080808;padding:5px 0;border-radius:0 .5rem .5rem 0;");
+	}, 0);
+}
+
+</script>
+
+
+
+
+<!-- 公式渲染 -->
+
+
+
+<!-- 不蒜子 -->
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
 
 
 </body>
